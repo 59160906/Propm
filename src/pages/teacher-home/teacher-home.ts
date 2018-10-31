@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {CreateclassPage} from '../createclass/createclass';
 
 /**
  * Generated class for the TeacherHomePage page.
@@ -22,6 +23,6 @@ export class TeacherHomePage {
     console.log('ionViewDidLoad TeacherHomePage');
   }
   gocreateclass(){
-    this.navCtrl.push("CreateclassPage");
+    this.navCtrl.push(CreateclassPage);
   }
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {JoinclassPage} from '../joinclass/joinclass';
 /**
  * Generated class for the StudentHomePage page.
  *
@@ -22,7 +22,7 @@ export class StudentHomePage {
     console.log('ionViewDidLoad StudentHomePage');
   }
   gojoinclass(){
-    this.navCtrl.push("JoinclassPage");
+    this.navCtrl.push(JoinclassPage);
   }
 
 }
