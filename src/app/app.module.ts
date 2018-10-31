@@ -11,18 +11,26 @@ import { LoginTPage } from '../pages/login-t/login-t';
 import { CreateclassPage } from '../pages/createclass/createclass';
 import { JoinclassPage } from '../pages/joinclass/joinclass';
 import { LoginPage } from '../pages/login/login';
-import {RegisterPage} from '../pages/register/register';
+import { RegisterPage } from '../pages/register/register';
+import { RegisterTPage } from '../pages/register-t/register-t';
+import { StudentPage } from '../pages/student/student';
+import { StudentHomePage } from '../pages/student-home/student-home';
+import { TeacherPage } from '../pages/teacher/teacher';
 
 @NgModule({
   declarations: [
-    TeacherHomePage,
     MyApp,
     HomePage,
+    TeacherHomePage,
     LoginTPage,
     CreateclassPage,
     JoinclassPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    RegisterTPage,
+    StudentPage,
+    StudentHomePage,
+    TeacherPage
    
   ],
   imports: [
@@ -31,14 +39,18 @@ import {RegisterPage} from '../pages/register/register';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    TeacherHomePage,
     MyApp,
     HomePage,
+    TeacherHomePage,
     LoginTPage,
     CreateclassPage,
     JoinclassPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    RegisterTPage,
+    StudentPage,
+    StudentHomePage,
+    TeacherPage
   ],
   providers: [
     StatusBar,

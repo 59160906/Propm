@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { LoginTPage } from '../login-t/login-t';
+import { RegisterTPage } from '../register-t/register-t';
 /**
  * Generated class for the TeacherPage page.
  *
@@ -23,9 +24,9 @@ export class TeacherPage {
   }
   
   login(){
-    this.navCtrl.push("LoginTPage");
+    this.navCtrl.push(LoginTPage);
   }
   register(){
-    this.navCtrl.push("RegisterTPage");
+    this.navCtrl.push(RegisterTPage);
   }
 }

@@ -1,14 +1,14 @@
 webpackJsonp([8],{
 
-/***/ 278:
+/***/ 275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeacherHomePageModule", function() { return TeacherHomePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JoinclassPageModule", function() { return JoinclassPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teacher_home__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__joinclass__ = __webpack_require__(195);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TeacherHomePageModule = /** @class */ (function () {
-    function TeacherHomePageModule() {
+var JoinclassPageModule = /** @class */ (function () {
+    function JoinclassPageModule() {
     }
-    TeacherHomePageModule = __decorate([
+    JoinclassPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__teacher_home__["a" /* TeacherHomePage */],
+                __WEBPACK_IMPORTED_MODULE_2__joinclass__["a" /* JoinclassPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__teacher_home__["a" /* TeacherHomePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__joinclass__["a" /* JoinclassPage */]),
             ],
         })
-    ], TeacherHomePageModule);
-    return TeacherHomePageModule;
+    ], JoinclassPageModule);
+    return JoinclassPageModule;
 }());
 
-//# sourceMappingURL=teacher-home.module.js.map
+//# sourceMappingURL=joinclass.module.js.map
 
 /***/ })
 

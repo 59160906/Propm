@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {StudentHomePage} from '../student-home/student-home'
 
 /**
  * Generated class for the RegisterPage page.
@@ -22,6 +23,6 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
   goStudent(){
-    this.navCtrl.setRoot("StudentHomePage");
+    this.navCtrl.setRoot(StudentHomePage);
   }
 }

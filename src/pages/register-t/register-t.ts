@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {TeacherHomePage} from '../teacher-home/teacher-home'
 
 /**
  * Generated class for the RegisterTPage page.
@@ -23,6 +24,6 @@ export class RegisterTPage {
   }
 
   goTeacher(){
-    this.navCtrl.setRoot("TeacherHomePage");
+    this.navCtrl.setRoot(TeacherHomePage);
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {  TeacherHomePage, } from '../teacher-home/teacher-home';
-
+import { TeacherHomePage } from '../teacher-home/teacher-home';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the LoginTPage page.
@@ -24,10 +24,10 @@ export class LoginTPage {
     console.log('ionViewDidLoad LoginTPage');
   }
   goTeacherhome(){
-    this.navCtrl.setRoot("TeacherHomePage")
+    this.navCtrl.setRoot(TeacherHomePage)
   }
   Home(){
-    this.navCtrl.push("HomePage");
+    this.navCtrl.push(HomePage);
   }
 
 }

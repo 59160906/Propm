@@ -1,14 +1,14 @@
 webpackJsonp([7],{
 
-/***/ 270:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreateclassPageModule", function() { return CreateclassPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginTPageModule", function() { return LoginTPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createclass__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_t__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CreateclassPageModule = /** @class */ (function () {
-    function CreateclassPageModule() {
+var LoginTPageModule = /** @class */ (function () {
+    function LoginTPageModule() {
     }
-    CreateclassPageModule = __decorate([
+    LoginTPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__createclass__["a" /* CreateclassPage */],
+                __WEBPACK_IMPORTED_MODULE_2__login_t__["a" /* LoginTPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__createclass__["a" /* CreateclassPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_t__["a" /* LoginTPage */]),
             ],
         })
-    ], CreateclassPageModule);
-    return CreateclassPageModule;
+    ], LoginTPageModule);
+    return LoginTPageModule;
 }());
 
-//# sourceMappingURL=createclass.module.js.map
+//# sourceMappingURL=login-t.module.js.map
 
 /***/ })
 

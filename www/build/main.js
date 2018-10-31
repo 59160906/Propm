@@ -22,43 +22,43 @@ webpackEmptyAsyncContext.id = 108;
 
 var map = {
 	"../pages/createclass/createclass.module": [
-		270,
-		7
-	],
-	"../pages/joinclass/joinclass.module": [
-		271,
-		6
-	],
-	"../pages/login-t/login-t.module": [
-		272,
+		274,
 		9
 	],
+	"../pages/joinclass/joinclass.module": [
+		275,
+		8
+	],
+	"../pages/login-t/login-t.module": [
+		276,
+		7
+	],
 	"../pages/login/login.module": [
-		273,
-		5
+		277,
+		6
 	],
 	"../pages/register-t/register-t.module": [
-		274,
-		4
-	],
-	"../pages/register/register.module": [
-		275,
+		278,
 		3
 	],
+	"../pages/register/register.module": [
+		279,
+		5
+	],
 	"../pages/student-home/student-home.module": [
-		276,
+		280,
 		2
 	],
 	"../pages/student/student.module": [
-		277,
+		281,
 		1
 	],
 	"../pages/teacher-home/teacher-home.module": [
-		278,
-		8
+		282,
+		4
 	],
 	"../pages/teacher/teacher.module": [
-		279,
+		283,
 		0
 	]
 };
@@ -84,7 +84,9 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__student_student__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__teacher_teacher__ = __webpack_require__(287);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -96,23 +98,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
     HomePage.prototype.Student = function () {
-        this.navCtrl.push("StudentPage");
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__student_student__["a" /* StudentPage */]);
     };
     HomePage.prototype.teacher = function () {
-        this.navCtrl.push("TeacherPage");
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__teacher_teacher__["a" /* TeacherPage */]);
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\home\home.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            ระบบเช็คชื่อ\n        </ion-title>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-item (click)="Student()">\n            <img item-start src="assets/imgs/11.png">\n\n        </ion-item>\n        <div text-center>\n            <h2>Student</h2>\n        </div>\n    </ion-list><br>\n    <ion-list>\n\n        <ion-item (click)="teacher()">\n\n            <img item-start src="assets/imgs/22.png">\n\n        </ion-item>\n        <div text-center>\n            <h2>Teacher</h2>\n        </div>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\home\home.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>\n\n            ระบบเช็คชื่อ\n\n        </ion-title>\n\n\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-list>\n\n        <ion-item (click)="Student()">\n\n            <img item-start src="assets/imgs/11.png">\n\n\n\n        </ion-item>\n\n        <div text-center>\n\n            <h2>Student</h2>\n\n        </div>\n\n    </ion-list><br>\n\n    <ion-list>\n\n\n\n        <ion-item (click)="teacher()">\n\n\n\n            <img item-start src="assets/imgs/22.png">\n\n\n\n        </ion-item>\n\n        <div text-center>\n\n            <h2>Teacher</h2>\n\n        </div>\n\n    </ion-list>\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
     ], HomePage);
     return HomePage;
+    var _a;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -123,9 +128,9 @@ var HomePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginTPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateclassPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -135,6 +140,100 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+/**
+ * Generated class for the CreateclassPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CreateclassPage = /** @class */ (function () {
+    function CreateclassPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CreateclassPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CreateclassPage');
+    };
+    CreateclassPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-createclass',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\createclass\createclass.html"*/'<!--\n\n  Generated template for the CreateclassPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <ion-title>สร้างห้องเรียน</ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-card>\n\n        <ion-card-content>\n\n            <ion-item>\n\n                <ion-input type="text" placeholder="รหัสวิชา"></ion-input>\n\n                <br>\n\n                <ion-input type="text" placeholder="ชื่อวิชา"></ion-input>\n\n            </ion-item>\n\n\n\n        </ion-card-content>\n\n\n\n    </ion-card>\n\n    <br>\n\n    <div text-center align-items-center>\n\n        <button ion-button style="float:center">สร้างห้องเรียน</button>\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\createclass\createclass.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], CreateclassPage);
+    return CreateclassPage;
+}());
+
+//# sourceMappingURL=createclass.js.map
+
+/***/ }),
+
+/***/ 195:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JoinclassPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the JoinclassPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var JoinclassPage = /** @class */ (function () {
+    function JoinclassPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    JoinclassPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad JoinclassPage');
+    };
+    JoinclassPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-joinclass',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\joinclass\joinclass.html"*/'<!--\n\n  Generated template for the JoinclassPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <ion-title>เข้าร่วมชั้นเรียน</ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-card>\n\n\n\n\n\n\n\n        <ion-card-content>\n\n            <ion-item>\n\n                <ion-input type="text" placeholder="รหัสเข้าชั้นเรียน"></ion-input>\n\n            </ion-item>\n\n        </ion-card-content>\n\n\n\n    </ion-card>\n\n    <br>\n\n    <div text-center align-items-center>\n\n        <button ion-button style="float:center">เข้าร่วมชั้นเรียน</button>\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\joinclass\joinclass.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], JoinclassPage);
+    return JoinclassPage;
+}());
+
+//# sourceMappingURL=joinclass.js.map
+
+/***/ }),
+
+/***/ 196:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginTPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teacher_home_teacher_home__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(193);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 
 
 /**
@@ -152,31 +251,139 @@ var LoginTPage = /** @class */ (function () {
         console.log('ionViewDidLoad LoginTPage');
     };
     LoginTPage.prototype.goTeacherhome = function () {
-        this.navCtrl.setRoot("TeacherHomePage");
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__teacher_home_teacher_home__["a" /* TeacherHomePage */]);
     };
     LoginTPage.prototype.Home = function () {
-        this.navCtrl.push("HomePage");
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
     };
     LoginTPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login-t',template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\login-t\login-t.html"*/'<!--\n  Generated template for the LoginTPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>Login</ion-title>\n        <button ion-button style="float:right" (click)="Home()">close</button>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <ion-list>\n        <ion-item>\n            <ion-label floating>Email</ion-label>\n            <ion-input type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Password</ion-label>\n            <ion-input type="password"></ion-input>\n        </ion-item>\n    </ion-list>\n    <div padding>\n        <button ion-button color="primary" (click)="goTeacherhome()" block>Sign In</button>\n    </div>\n</ion-content>'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\login-t\login-t.html"*/,
+            selector: 'page-login-t',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\login-t\login-t.html"*/'<!--\n\n  Generated template for the LoginTPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <ion-title>Login</ion-title>\n\n        <button ion-button style="float:right" (click)="Home()">close</button>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n        <ion-item>\n\n            <ion-label floating>Email</ion-label>\n\n            <ion-input type="text"></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Password</ion-label>\n\n            <ion-input type="password"></ion-input>\n\n        </ion-item>\n\n    </ion-list>\n\n    <div padding>\n\n        <button ion-button color="primary" (click)="goTeacherhome()" block>Sign In</button>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\login-t\login-t.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
     ], LoginTPage);
     return LoginTPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=login-t.js.map
 
 /***/ }),
 
-/***/ 195:
+/***/ 197:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__student_home_student_home__ = __webpack_require__(285);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var LoginPage = /** @class */ (function () {
+    function LoginPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    LoginPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LoginPage');
+    };
+    LoginPage.prototype.Home = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */]);
+    };
+    LoginPage.prototype.goStudenthome = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__student_home_student_home__["a" /* StudentHomePage */]);
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <ion-title>Login</ion-title>\n\n        <button ion-button style="float:right" (click)="Home()">close</button>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n        <ion-item>\n\n            <ion-label floating>Email</ion-label>\n\n            <ion-input type="text"></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Password</ion-label>\n\n            <ion-input type="password"></ion-input>\n\n        </ion-item>\n\n    </ion-list>\n\n    <div padding>\n\n        <button ion-button color="primary" block (click)="goStudenthome()">Sign In</button>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\login\login.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+    ], LoginPage);
+    return LoginPage;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 198:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__student_home_student_home__ = __webpack_require__(285);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the RegisterPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var RegisterPage = /** @class */ (function () {
+    function RegisterPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    RegisterPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RegisterPage');
+    };
+    RegisterPage.prototype.goStudent = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__student_home_student_home__["a" /* StudentHomePage */]);
+    };
+    RegisterPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-register',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\register\register.html"*/'<!--\n\n  Generated template for the RegisterPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <ion-title>Register</ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <ion-item>\n\n        <ion-label>ชื่อนำ</ion-label>\n\n        <ion-select>\n\n            <ion-option value="m">นาย</ion-option>\n\n            <ion-option value="miss">นางสาว</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n    <ion-item>\n\n        <ion-label fixed>ชื่อ</ion-label>\n\n        <ion-input type="text" value=""></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label fixed>คณะ</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n        <ion-label fixed>สาขา</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n        <ion-label fixed>Email</ion-label>\n\n        <ion-input type="Email" value="xxx@xxxx.xxx"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label fixed>Password</ion-label>\n\n        <ion-input type="password"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label fixed>confirm Password</ion-label>\n\n        <ion-input type="password"></ion-input>\n\n    </ion-item>\n\n\n\n    <div text-center align-items-center>\n\n        <button ion-button style="float:center" (click)="goStudent()">ok</button>\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\register\register.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+    ], RegisterPage);
+    return RegisterPage;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=register.js.map
+
+/***/ }),
+
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeacherHomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -207,7 +414,7 @@ var TeacherHomePage = /** @class */ (function () {
     };
     TeacherHomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-teacher-home',template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\teacher-home\teacher-home.html"*/'<!--\n  Generated template for the TeacherHomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <button ion-button style="float:left">ข้อมูล</button>\n        <ion-title>\n            Teacher\n        </ion-title>\n        <button ion-button style="float:right" (click)="gocreateclass()"><ion-icon name="add-circle"></ion-icon></button>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <h3>รายวิชา</h3>\n    <div text-center align-items-center>\n        <button ion-button style="float:center">ok</button>\n    </div>\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\teacher-home\teacher-home.html"*/,
+            selector: 'page-teacher-home',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\teacher-home\teacher-home.html"*/'<!--\n\n  Generated template for the TeacherHomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <button ion-button style="float:left">ข้อมูล</button>\n\n        <ion-title>\n\n            Teacher\n\n        </ion-title>\n\n        <button ion-button style="float:right" (click)="gocreateclass()"><ion-icon name="add-circle"></ion-icon></button>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <h3>รายวิชา</h3>\n\n    <div text-center align-items-center>\n\n        <button ion-button style="float:center">ok</button>\n\n    </div>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\teacher-home\teacher-home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], TeacherHomePage);
@@ -218,13 +425,13 @@ var TeacherHomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(223);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -232,24 +439,28 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 219:
+/***/ 223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(273);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_teacher_home_teacher_home__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_t_login_t__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_createclass_createclass__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_joinclass_joinclass__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_register_register__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_teacher_home_teacher_home__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_t_login_t__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_createclass_createclass__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_joinclass_joinclass__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_login_login__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_register_register__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_register_t_register_t__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_student_student__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_student_home_student_home__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_teacher_teacher__ = __webpack_require__(287);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -269,20 +480,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_7__pages_teacher_home_teacher_home__["a" /* TeacherHomePage */],
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_teacher_home_teacher_home__["a" /* TeacherHomePage */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_login_t_login_t__["a" /* LoginTPage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_createclass_createclass__["a" /* CreateclassPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_joinclass_joinclass__["a" /* JoinclassPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_register_register__["a" /* RegisterPage */]
+                __WEBPACK_IMPORTED_MODULE_12__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_register_t_register_t__["a" /* RegisterTPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_student_student__["a" /* StudentPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_student_home_student_home__["a" /* StudentHomePage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_teacher_teacher__["a" /* TeacherPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -303,14 +522,18 @@ var AppModule = /** @class */ (function () {
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_7__pages_teacher_home_teacher_home__["a" /* TeacherHomePage */],
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_teacher_home_teacher_home__["a" /* TeacherHomePage */],
                 __WEBPACK_IMPORTED_MODULE_8__pages_login_t_login_t__["a" /* LoginTPage */],
                 __WEBPACK_IMPORTED_MODULE_9__pages_createclass_createclass__["a" /* CreateclassPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_joinclass_joinclass__["a" /* JoinclassPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_register_register__["a" /* RegisterPage */]
+                __WEBPACK_IMPORTED_MODULE_12__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_register_t_register_t__["a" /* RegisterTPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_student_student__["a" /* StudentPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_student_home_student_home__["a" /* StudentHomePage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_teacher_teacher__["a" /* TeacherPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -326,13 +549,13 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 269:
+/***/ 273:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(193);
@@ -361,7 +584,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -372,151 +595,64 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 280:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateclassPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CreateclassPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CreateclassPage = /** @class */ (function () {
-    function CreateclassPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CreateclassPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CreateclassPage');
-    };
-    CreateclassPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-createclass',template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\createclass\createclass.html"*/'<!--\n  Generated template for the CreateclassPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>สร้างห้องเรียน</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <ion-card>\n        <ion-card-content>\n            <ion-item>\n                <ion-input type="text" placeholder="รหัสวิชา"></ion-input>\n                <br>\n                <ion-input type="text" placeholder="ชื่อวิชา"></ion-input>\n            </ion-item>\n\n        </ion-card-content>\n\n    </ion-card>\n    <br>\n    <div text-center align-items-center>\n        <button ion-button style="float:center">สร้างห้องเรียน</button>\n    </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\createclass\createclass.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], CreateclassPage);
-    return CreateclassPage;
-}());
-
-//# sourceMappingURL=createclass.js.map
-
-/***/ }),
-
-/***/ 281:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JoinclassPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the JoinclassPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var JoinclassPage = /** @class */ (function () {
-    function JoinclassPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    JoinclassPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad JoinclassPage');
-    };
-    JoinclassPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-joinclass',template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\joinclass\joinclass.html"*/'<!--\n  Generated template for the JoinclassPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>เข้าร่วมชั้นเรียน</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-card>\n\n\n\n        <ion-card-content>\n            <ion-item>\n                <ion-input type="text" placeholder="รหัสเข้าชั้นเรียน"></ion-input>\n            </ion-item>\n        </ion-card-content>\n\n    </ion-card>\n    <br>\n    <div text-center align-items-center>\n        <button ion-button style="float:center">เข้าร่วมชั้นเรียน</button>\n    </div>\n\n</ion-content>'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\joinclass\joinclass.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], JoinclassPage);
-    return JoinclassPage;
-}());
-
-//# sourceMappingURL=joinclass.js.map
-
-/***/ }),
-
-/***/ 282:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var LoginPage = /** @class */ (function () {
-    function LoginPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    LoginPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad LoginPage');
-    };
-    LoginPage.prototype.Home = function () {
-        this.navCtrl.push("HomePage");
-    };
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\login\login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>Login</ion-title>\n        <button ion-button style="float:right" (click)="Home()">close</button>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list>\n        <ion-item>\n            <ion-label floating>Email</ion-label>\n            <ion-input type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Password</ion-label>\n            <ion-input type="password"></ion-input>\n        </ion-item>\n    </ion-list>\n    <div padding>\n        <button ion-button color="primary" block>Sign In</button>\n    </div>\n</ion-content>'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\login\login.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
-/***/ }),
-
 /***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterTPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teacher_home_teacher_home__ = __webpack_require__(199);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the RegisterTPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var RegisterTPage = /** @class */ (function () {
+    function RegisterTPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    RegisterTPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RegisterTPage');
+    };
+    RegisterTPage.prototype.goTeacher = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__teacher_home_teacher_home__["a" /* TeacherHomePage */]);
+    };
+    RegisterTPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-register-t',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\register-t\register-t.html"*/'<!--\n\n  Generated template for the RegisterTPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <ion-title>Register</ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-item>\n\n        <ion-label>ชื่อนำ</ion-label>\n\n        <ion-select>\n\n            <ion-option value="m">นาย</ion-option>\n\n            <ion-option value="mr">นาง</ion-option>\n\n            <ion-option value="miss">นางสาว</ion-option>\n\n        </ion-select>\n\n    </ion-item>\n\n    <ion-item>\n\n        <ion-label fixed>ชื่อ</ion-label>\n\n        <ion-input type="text" value=""></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label fixed>คณะ</ion-label>\n\n        <ion-input type="text"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n        <ion-label fixed>Email</ion-label>\n\n        <ion-input type="Email" value="xxx@xxxx.xxx"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label fixed>Password</ion-label>\n\n        <ion-input type="password"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label fixed>confirm Password</ion-label>\n\n        <ion-input type="password"></ion-input>\n\n    </ion-item>\n\n    <div text-center align-items-center>\n\n        <button ion-button style="float:center" (click)="goTeacher()">ok</button>\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\register-t\register-t.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+    ], RegisterTPage);
+    return RegisterTPage;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=register-t.js.map
+
+/***/ }),
+
+/***/ 285:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StudentHomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -529,34 +665,147 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the RegisterPage page.
+ * Generated class for the StudentHomePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var RegisterPage = /** @class */ (function () {
-    function RegisterPage(navCtrl, navParams) {
+var StudentHomePage = /** @class */ (function () {
+    function StudentHomePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    RegisterPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad RegisterPage');
+    StudentHomePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad StudentHomePage');
     };
-    RegisterPage.prototype.goStudent = function () {
-        this.navCtrl.setRoot("StudentHomePage");
+    StudentHomePage.prototype.gojoinclass = function () {
+        this.navCtrl.push("JoinclassPage");
     };
-    RegisterPage = __decorate([
+    StudentHomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\register\register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>Register</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n    <ion-item>\n        <ion-label>ชื่อนำ</ion-label>\n        <ion-select>\n            <ion-option value="m">นาย</ion-option>\n            <ion-option value="miss">นางสาว</ion-option>\n        </ion-select>\n    </ion-item>\n    <ion-item>\n        <ion-label fixed>ชื่อ</ion-label>\n        <ion-input type="text" value=""></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label fixed>คณะ</ion-label>\n        <ion-input type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n        <ion-label fixed>สาขา</ion-label>\n        <ion-input type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n        <ion-label fixed>Email</ion-label>\n        <ion-input type="Email" value="xxx@xxxx.xxx"></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label fixed>Password</ion-label>\n        <ion-input type="password"></ion-input>\n    </ion-item>\n\n    <ion-item>\n        <ion-label fixed>confirm Password</ion-label>\n        <ion-input type="password"></ion-input>\n    </ion-item>\n\n    <div text-center align-items-center>\n        <button ion-button style="float:center" (click)="goStudent()">ok</button>\n    </div>\n    <div padding>\n        <button ion-button color="primary" block>back</button>\n    </div>\n</ion-content>'/*ion-inline-end:"C:\Users\MONAZA555\Desktop\NextflowApp\src\pages\register\register.html"*/,
+            selector: 'page-student-home',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\student-home\student-home.html"*/'<!--\n\n  Generated template for the StudentHomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar>\n\n        <button ion-button style="float:left">ข้อมูล</button>\n\n        <ion-title>\n\n            Student\n\n        </ion-title>\n\n        <button ion-button style="float:right" (click)="gojoinclass()"><ion-icon name="add-circle"></ion-icon></button>\n\n\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <h3>รายวิชา</h3>\n\n    <div text-center align-items-center>\n\n        <button ion-button style="float:center">ok</button>\n\n    </div>\n\n\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\student-home\student-home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], RegisterPage);
-    return RegisterPage;
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+    ], StudentHomePage);
+    return StudentHomePage;
+    var _a, _b;
 }());
 
-//# sourceMappingURL=register.js.map
+//# sourceMappingURL=student-home.js.map
+
+/***/ }),
+
+/***/ 286:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StudentPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(198);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the StudentPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var StudentPage = /** @class */ (function () {
+    function StudentPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    StudentPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad StudentPage');
+    };
+    StudentPage.prototype.login = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]);
+    };
+    StudentPage.prototype.register = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__register_register__["a" /* RegisterPage */]);
+    };
+    StudentPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-student',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\student\student.html"*/'<!--\n\n  Generated template for the StudentPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Student</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<div text-center align-items-center>\n\n    <button ion-button (click)="login()">Login</button>\n\n</div> \n\n <div text-center align-items-center>\n\n    <button ion-button (click)="register()">ลงทะเบียน</button>\n\n</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\student\student.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+    ], StudentPage);
+    return StudentPage;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=student.js.map
+
+/***/ }),
+
+/***/ 287:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeacherPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_t_login_t__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_t_register_t__ = __webpack_require__(284);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the TeacherPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var TeacherPage = /** @class */ (function () {
+    function TeacherPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    TeacherPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TeacherPage');
+    };
+    TeacherPage.prototype.login = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__login_t_login_t__["a" /* LoginTPage */]);
+    };
+    TeacherPage.prototype.register = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__register_t_register_t__["a" /* RegisterTPage */]);
+    };
+    TeacherPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-teacher',template:/*ion-inline-start:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\teacher\teacher.html"*/'<!--\n\n  Generated template for the TeacherPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Teacher</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <div text-center align-items-center>\n\n      <button ion-button (click)="login()">Login</button>\n\n  </div> \n\n   <div text-center align-items-center>\n\n      <button ion-button (click)="register()">ลงทะเบียน</button>\n\n  </div>\n\n  </ion-content>\n\n'/*ion-inline-end:"C:\Users\ArtArm Laptop\Desktop\AppMONA\checklistapplication\src\pages\teacher\teacher.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object])
+    ], TeacherPage);
+    return TeacherPage;
+    var _a, _b;
+}());
+
+//# sourceMappingURL=teacher.js.map
 
 /***/ })
 
-},[196]);
+},[200]);
 //# sourceMappingURL=main.js.map
