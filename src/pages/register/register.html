@@ -15,41 +15,45 @@
 <ion-content padding>
     <ion-item>
         <ion-label>ชื่อนำ</ion-label>
-        <ion-select>
+        <ion-select [(ngModel)]="m">
             <ion-option value="m">นาย</ion-option>
             <ion-option value="miss">นางสาว</ion-option>
         </ion-select>
     </ion-item>
     <ion-item>
+        <ion-label fixed>รหัสนิสิต</ion-label>
+        <ion-input type="text" [value]="id" [(ngModel)]="id"></ion-input>
+    </ion-item>
+    <ion-item>
         <ion-label fixed>ชื่อ</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="text" [value]="name" [(ngModel)]="name"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label fixed>คณะ</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [value]="fauctly" [(ngModel)]="fauctly"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>สาขา</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [value]="major" [(ngModel)]="major"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>Email</ion-label>
-        <ion-input type="Email" value="xxx@xxxx.xxx"></ion-input>
+        <ion-input type="Email" placeholder="xxx@xxxx.xxx" [value]="email" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label fixed>Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [value]="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label fixed>confirm Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [value]="confirmPassword" [(ngModel)]="confirmPassword"></ion-input>
     </ion-item>
 
     <div text-center align-items-center>
-        <button ion-button style="float:center" (click)="goStudent()">ok</button>
+        <button ion-button style="float:center" (click)="register(m,id,name,fauctly,major,email,password,confirmPassword)">ok</button>
     </div>
 
 </ion-content>
