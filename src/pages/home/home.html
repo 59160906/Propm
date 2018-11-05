@@ -1,7 +1,9 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            ระบบเช็คชื่อ
+            <div text-center>
+                <h1>ระบบเช็คชื่อ</h1>
+            </div>
         </ion-title>
 
     </ion-navbar>
@@ -10,22 +12,29 @@
 <ion-content>
     <ion-list>
         <ion-item (click)="Student()">
-            <img item-start src="assets/imgs/11.png">
+
+            <ion-card>
+                <img src="http://www.kobe11achillesheel.com/reviews/img/girl-21.png">
+            </ion-card>
+
+            <div text-center>
+                <h2>Student</h2>
+            </div>
 
         </ion-item>
-        <div text-center>
-            <h2>Student</h2>
-        </div>
-    </ion-list><br>
-    <ion-list>
+    </ion-list>
 
+    <ion-list>
         <ion-item (click)="teacher()">
 
-            <img item-start src="assets/imgs/22.png">
+            <ion-card>
+                <img src="https://images.vexels.com/media/users/3/141633/isolated/preview/a2bf2ebaf3f1c560e74eaca740ff1918-curly-hair-woman-teacher-by-vexels.png">
+            </ion-card>
+
+            <div text-center>
+                <h2>Teacher</h2>
+            </div>
 
         </ion-item>
-        <div text-center>
-            <h2>Teacher</h2>
-        </div>
     </ion-list>
 </ion-content>

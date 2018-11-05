@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams ,AlertController} from 'ionic-angular';
 import { TeacherHomePage } from '../teacher-home/teacher-home';
 import { HomePage } from '../home/home';
-
+import {ChecklistServiceProvider} from '../../providers/checklist-service/checklist-service'
 /**
  * Generated class for the LoginTPage page.
  *
@@ -17,17 +17,37 @@ import { HomePage } from '../home/home';
 })
 export class LoginTPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private checklistsevice:ChecklistServiceProvider,private alertCtrl : AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginTPage');
   }
-  goTeacherhome(){
-    this.navCtrl.setRoot(TeacherHomePage)
-  }
+ 
+  
   Home(){
     this.navCtrl.push(HomePage);
   }
+  login(id,password){
+    
+    this.checklistsevice.loginteacher(id,password).subscribe((response) => {
+      if (response.data != null)
+        this.navCtrl.setRoot(TeacherHomePage);
+      else{
+        let alert = this.alertCtrl.create({
+          title: 'Can not sign in',
+          message: 'email or password incorrect',
+          buttons: [
+            {
+              text: 'ok',
+              role: 'cancel',
+             
+            }
+          ]
+        });
+        alert.present()
+      }
+    })
 
+  }
 }

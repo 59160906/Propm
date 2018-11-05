@@ -16,6 +16,8 @@ import { RegisterTPage } from '../pages/register-t/register-t';
 import { StudentPage } from '../pages/student/student';
 import { StudentHomePage } from '../pages/student-home/student-home';
 import { TeacherPage } from '../pages/teacher/teacher';
+import { ChecklistServiceProvider } from '../providers/checklist-service/checklist-service';
+import { HttpModule } from '@angular/http'; 
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { TeacherPage } from '../pages/teacher/teacher';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -55,7 +58,8 @@ import { TeacherPage } from '../pages/teacher/teacher';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ChecklistServiceProvider
   ]
 })
 export class AppModule {}
