@@ -14,39 +14,42 @@
 
 
 <ion-content padding>
+
+
     <ion-item>
         <ion-label>ชื่อนำ</ion-label>
-        <ion-select>
-            <ion-option value="m">นาย</ion-option>
-            <ion-option value="mr">นาง</ion-option>
-            <ion-option value="miss">นางสาว</ion-option>
+        <ion-select [(ngModel)]="m">
+            <ion-option value="นาย">นาย</ion-option>
+            <ion-option value="นาง">นาง</ion-option>
+            <ion-option value="นางสาว">นางสาว</ion-option>
         </ion-select>
     </ion-item>
+
     <ion-item>
         <ion-label fixed>ชื่อ</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="text" [value]="name" [(ngModel)]="name"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label fixed>คณะ</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" [value]="faculty" [(ngModel)]="faculty"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label fixed>Email</ion-label>
-        <ion-input type="Email" value="xxx@xxxx.xxx"></ion-input>
+        <ion-input type="Email" placeholder="xxx@xxxx.xxx" [value]="email" [(ngModel)]="email"></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-label fixed>Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-label fixed>รหัสผ่าน</ion-label>
+        <ion-input type="password" [value]="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-label fixed>confirm Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-label fixed>ยืนยันรหัสผ่าน </ion-label>
+        <ion-input type="password" [value]="confirmPassword" [(ngModel)]="confirmPassword"></ion-input>
     </ion-item>
-    <div text-center align-items-center>
-        <button ion-button style="float:center" (click)="goTeacher()">ok</button>
+    <div text-center align-items-center>x
+        <button ion-button style="float:center" (click)="resigterTeacher(m,name,fauclty,email,password,confirmPassword)">ok</button>
     </div>
 
 </ion-content>

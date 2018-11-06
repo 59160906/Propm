@@ -25,20 +25,9 @@ export class RegisterPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterPage');
   }
-  register(m,id,name,fauctly,major,email,password,confirmPassword){
+  register(m,id,name,fauclty,major,email,password,confirmPassword){
 
-    var data={ 
-      student_id:id,
-      student_name:m+name,
-      fauctly:fauctly,
-      major:major,
-      email:email,
-      password:password,
- 
-    }
-    console.log(data);
-    
-    if (m==null || id== null || name== null || fauctly== null || major==null || email ==null || password==null || confirmPassword == null){
+    if (m==null || id== null || name== null || fauclty== null || major==null || email ==null || password==null || confirmPassword == null){
       let alert = this.alertCtrl.create({
         title: 'Can not Register',
         message: 'Please input information agian',
@@ -74,7 +63,7 @@ export class RegisterPage {
             text: 'ok',
             role: 'cancel',
             handler: () => {
-              this.addUser(m,id,name,fauctly,major,email,password);
+              this.addUser(m,id,name,fauclty,major,email,password);
              
             }
           }
@@ -86,8 +75,8 @@ export class RegisterPage {
 
 
   }
-    async addUser(m,id,name,fauctly,major,email,password){
-      await this.checklistservice.createUser(m,id,name,fauctly,major,email,password);
+    async addUser(m,id,name,fauclty,major,email,password){
+      await this.checklistservice.createUserStudent(m,id,name,fauclty,major,email,password);
       this.navCtrl.setRoot(StudentHomePage)    
     }
   }

@@ -23,16 +23,26 @@ loginteacher(id,password){
  
   return this.http.get("http://localhost:8000/teacher/"+id+"/"+password).map((res)=>res.json());
 }
- createUser(m,id,name,fauctly,major,email,password){
+ createUserStudent(m,id,name,fauclty,major,email,password){
    var data={ 
      student_id:id,
      student_name:m+name,
-     fauctly:fauctly,
+     fauctly:fauclty,
      major:major,
      email:email,
      password:password
 
    }
 return this.http.post("http://localhost:8000/student/add",data).toPromise();
+ }
+ createUserTeacher(m,name,fauclty,email,password){
+  var data={ 
+    teacher_name:m+name,
+     fauclty:fauclty,
+     email:email,
+     password:password,
+
+   }
+   return this.http.post("http://localhost:8000/teacher/add",data).toPromise();
  }
 }
