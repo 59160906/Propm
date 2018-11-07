@@ -18,7 +18,8 @@ import { StudentHomePage } from '../pages/student-home/student-home';
 import { TeacherPage } from '../pages/teacher/teacher';
 import { ChecklistServiceProvider } from '../providers/checklist-service/checklist-service';
 import { HttpModule } from '@angular/http'; 
-
+import { InfoPage } from '../pages/info/info';
+import { InfoTPage } from'../pages/info-t/info-t';
 @NgModule({
   declarations: [
     MyApp,
@@ -32,7 +33,9 @@ import { HttpModule } from '@angular/http';
     RegisterTPage,
     StudentPage,
     StudentHomePage,
-    TeacherPage
+    TeacherPage,
+    InfoPage,
+    InfoTPage
    
   ],
   imports: [
@@ -53,7 +56,9 @@ import { HttpModule } from '@angular/http';
     RegisterTPage,
     StudentPage,
     StudentHomePage,
-    TeacherPage
+    TeacherPage,
+    InfoPage,
+    InfoTPage
   ],
   providers: [
     StatusBar,

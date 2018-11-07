@@ -35,12 +35,12 @@ loginteacher(id,password){
    }
 return this.http.post("http://localhost:8000/student/add",data).toPromise();
  }
- createUserTeacher(m,name,fauclty,email,password){
+ createUserTeacher(m,name,faculty,email,password){
   var data={ 
     teacher_name:m+name,
-     fauclty:fauclty,
+     faulty:faculty,
      email:email,
-     password:password,
+     password:password
 
    }
    return this.http.post("http://localhost:8000/teacher/add",data).toPromise();

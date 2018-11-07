@@ -26,7 +26,7 @@
     </ion-item>
 
     <ion-item>
-        <ion-label fixed>ชื่อ</ion-label>
+        <ion-label fixed>ชื่อ-สกุล</ion-label>
         <ion-input type="text" [value]="name" [(ngModel)]="name"></ion-input>
     </ion-item>
 
@@ -48,8 +48,8 @@
         <ion-label fixed>ยืนยันรหัสผ่าน </ion-label>
         <ion-input type="password" [value]="confirmPassword" [(ngModel)]="confirmPassword"></ion-input>
     </ion-item>
-    <div text-center align-items-center>x
-        <button ion-button style="float:center" (click)="resigterTeacher(m,name,fauclty,email,password,confirmPassword)">ok</button>
+    <div text-center align-items-center>
+        <button ion-button style="float:center" (click)="resigterTeacher(m,name,faculty,email,password,confirmPassword)">ok</button>
     </div>
 
 </ion-content>

@@ -25,8 +25,8 @@ export class RegisterTPage {
     console.log('ionViewDidLoad RegisterTPage');
   }
 
-  resigterTeacher(m,name,fauclty,email,password,confirmPassword){
-    if (m==null || name== null || fauclty== null || email ==null || password==null || confirmPassword == null){
+  resigterTeacher(m,name,faculty,email,password,confirmPassword){
+    if (m==null || name== null || faculty== null || email ==null || password==null || confirmPassword == null){
       let alert = this.alertCtrl.create({
         title: 'Can not Register',
         message: 'Please input information agian',
@@ -62,7 +62,7 @@ export class RegisterTPage {
             text: 'ok',
             role: 'cancel',
             handler: () => {
-              this.addUser(m,name,fauclty,email,password);
+              this.addUser(m,name,faculty,email,password);
              
             }
           }
@@ -73,8 +73,8 @@ export class RegisterTPage {
     
     
   }
-    async addUser(m,name,fauclty,email,password){
-      await this.checklistservice.createUserTeacher(m,name,fauclty,email,password);
+    async addUser(m,name,faculty,email,password){
+      await this.checklistservice.createUserTeacher(m,name,faculty,email,password);
       this.navCtrl.setRoot(TeacherHomePage)  
   }
 

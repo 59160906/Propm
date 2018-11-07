@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {CreateclassPage} from '../createclass/createclass';
+import { InfoTPage } from '../info-t/info-t';
 
 /**
  * Generated class for the TeacherHomePage page.
@@ -24,5 +25,8 @@ export class TeacherHomePage {
   }
   gocreateclass(){
     this.navCtrl.push(CreateclassPage);
+  }
+  goinfo(){
+    this.navCtrl.push(InfoTPage);
   }
 }
